@@ -1,0 +1,46 @@
+<div id="container">
+  <div id="boxes">
+    <h1 class="text-center">Total Students:</h1>
+    <br />
+    <h2><strong>{{total}}</strong></h2>
+    <br>
+    <a routerLink="/all-students">
+      Click for more details.
+    </a><a style="float: right;" (click)="download()">
+      Click here to Download Report.
+    </a>
+  </div>
+  <div id="boxes">
+    <h1 class="text-center">Employed:</h1>
+    <br />
+    <h2><strong>{{employed}} / {{total}}</strong></h2>
+
+    <br>
+    <a routerLink="/employed">
+     Click here for more Info.
+    </a><a style="float: right;" (click)="download()">
+      Click here to Download Report.
+    </a>
+  </div>
+  <div id="boxes">
+    <h1 class="text-center">Gender:</h1>
+    <br />
+    <h2><strong style="float:left; padding-left: 25px;">Females: {{females}}</strong><strong style="float:right; padding-right: 25px;">Males: {{males}}</strong></h2>
+    <br><br>
+    <p (click)="download()">
+      Click here for more info.
+    </p>
+  </div>
+  <div id="boxes">
+    <h1>Institution:</h1>
+    <br />
+    <h2><strong style="float:left; padding-left: 25px;">IUM:</strong><strong style="float:right; padding-right: 25px;">NUST:</strong></h2><br><br>
+    <h2><strong style="float:left; padding-left: 35px;">{{ium}}</strong><strong style="float:right; padding-right: 50px;">{{nust}}</strong></h2>
+  </div>
+  <div id="boxes">
+    <h1 class="text-center">Mode of Study:</h1>
+    <br />
+    <h2><strong style="float:left; padding-left: 25px;">Full Time:</strong><strong style="text-align:center;">Part Time:</strong><strong style="float:right; padding-right: 25px;">Distance:</strong></h2>
+    <h2><strong style="float:left; padding-left: 65px;">{{full}}</strong><strong style="text-align:center;">{{part}}</strong><strong style="float:right; padding-right: 70px;">{{distance}}</strong></h2>
+  </div>
+</div>

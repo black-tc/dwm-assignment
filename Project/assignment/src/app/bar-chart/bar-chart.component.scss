@@ -1,0 +1,35 @@
+.body-section {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  // margin-top: 12rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  margin-bottom: 3rem;
+  font-family: Milo;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+.new {
+  float: right;
+  padding-bottom: 3rem;
+}
+
+button {
+  position: relative;
+  margin-top: 4.3%;
+}
+
+.total{
+  position: absolute;
+  margin-top: 4.3%;
+  right: 86%;
+  color: #fff;
+  padding: 5px;
+  /* padding-top: 5rem; */
+  border-radius: 5%;
+  background: linear-gradient(#007ac0, #007ac0);
+}

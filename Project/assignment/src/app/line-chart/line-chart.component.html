@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+
+<div class="body-section">
+  <div class="col-12">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+<h1 class="text-center" style="text-align: center;">Data For all the students that are Employed </h1>
+        <p style="text-align: center;">A report on all the students that are employed...</p>
+
+          <button type="button" class="btn float-right padding-bottom:2rem; btn-primary"
+            style=" background: linear-gradient(#1674bb, rgb(6, 74, 122)); outline-color: white ;"
+            >
+            <i class="fa fa-download"> </i> Download Report</button>&nbsp;
+        </div>
+        <br />
+        <h1 class="text-center" style="text-align: center;">Find the details below </h1>
+        <table id="example" class="table table-sm table-striped table-bordered" style="width:100%"
+          st-table="display_users" st-safe-src="Users">
+          <thead>
+            <tr>
+
+            </tr>
+            <tr st-select-row="row" st-select-mode="multiple" ng-repeat="row in display_records">
+              <!-- <th>Profile</th> -->
+              <th>Student number</th>
+              <th>University</th>
+
+              <th>Course</th>
+
+              <th>Gender</th>
+
+              <th>Company Sector</th>
+              <th>Comapny Name</th>
+              <th>How the internship obtained</th>
+              <th>Experience rating</th>
+              <th>Employed after Internship?</th>
+              <th>Job related to Internship</th>
+              <th>Internship Environment</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let apps of employed$; let i = index">
+              <td>{{ apps.Student_Number}}</td>
+              <td>{{ apps.University }}</td>
+              <td>{{ apps.Course }}</td>
+
+              <td>{{ apps.Gender }}</td>
+
+              <td>{{ apps.Company_Sector }}</td>
+              <td>{{ apps.Company_Name}}</td>
+              <td>{{ apps.How_was_the_internship_obtained }}</td>
+              <td>{{ apps.Experience_rating }}</td>
+              <td>{{ apps.Employed_by_the_company_after_the_internship }}</td>
+              <td>{{ apps.Was_your_internship_job_in_line_with_what_you_studied }}</td>
+              <td>{{ apps.Internship_environment}}</td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+

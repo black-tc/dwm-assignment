@@ -1,0 +1,58 @@
+#container {
+  width: 70%;
+  height: 500px;
+  margin: 50px auto;
+  position: relative;
+  //   background-color: rgb(65, 65, 65);
+  border-radius: 1rem;
+}
+
+#boxes {
+  width: 70%;
+  height: 30%;
+  background-color: rgb(65, 65, 65);
+  border-radius: 1rem;
+  position: flex;
+  cursor: pointer;
+  margin: 3px auto 3px auto;
+
+  h1 {
+    color: #fff;
+    text-decoration: underline;
+    text-align: center;
+    margin: 2px auto 0 5px;
+  }
+
+  h2 {
+    color: #fff;
+   font-size: 2rem;
+    text-align: center;
+    margin: 2px auto 0 5px;
+  }
+
+  p {
+    margin: 2px auto 0 5px;
+    color: rgb(150, 150, 150);
+    text-align: center;
+  }
+
+  a {
+    margin: 2px auto 0 5px;
+    color: rgb(150, 150, 150);
+    text-align: center !important;
+  }
+}
+
+#boxes:hover {
+  p {
+    color: rgb(220, 220, 220);
+  }
+
+  a {
+    color: rgb(220, 220, 220);
+  }
+
+  h1 {
+    color: #fff;
+  }
+}
